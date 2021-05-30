@@ -1,0 +1,146 @@
+.footer{
+    background: var(--primary);
+    position: fixed;
+    display: block;
+    bottom: 0;
+    right: 0;
+    width: 100vw;
+    margin-bottom: -1em;
+}
+  
+.primaryfooterul{
+    list-style-type: none;
+    display: grid;  
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    text-align: center;
+}
+  
+.primaryfooterulli{
+    margin: -0.4em;
+}
+  
+.footeritem{
+    color: var(--white);
+    cursor: pointer;
+    
+}
+  
+.logo{
+    display: none;
+}
+  
+.login{
+    display: none;
+}
+  
+.dashboard{
+    display: none;
+}
+  
+.booknow{
+    display: none;
+}
+  
+.secondaryfooterul{
+    display: none;
+}
+  
+.goup{
+    display: none;
+}
+  
+.copyrightsdiv{
+    display: block;
+    background:var(--tertiary);
+    text-align: center;
+}
+  
+.bodywhite{
+    color: var(--white);
+    font-weight: 400;
+    font-size: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+@media (min-width:961px) {
+    .primaryfooterul{
+        display: inline-block;
+        text-align: left;
+        vertical-align: middle;
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+    .login{
+        display: block;
+    }
+    .dashboard{
+        display: block;
+    }
+    .booknow{
+        display: block;
+    }
+    .logo{
+        display: inline-block;
+        margin-left: 1em;
+        vertical-align: middle;
+    }
+    .footer{
+        display: block; 
+        position: static;
+        text-align: center;
+        width: 100%;
+    }
+    .footerfixed{
+        display: block; 
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        width: 100vw;
+    }
+    .footeritem{
+        margin:0.5em;
+        font-size: 0.9rem;
+        text-align: center;
+    }
+    .secondaryfooterul{
+        display: inline-block;
+        text-align: left;
+        vertical-align: middle;
+        margin-top: 1em;
+        list-style-type: none;
+    }
+    .secondaryfooterli{
+        margin:0.5em;
+    }
+    .secondaryfootermailimg{
+        margin-left:-4em;
+    }
+    .secondaryfooterp{
+        display: inline;
+        font-size: 0.9rem;
+        margin-left: 0.5em;
+        color:var(--white);
+        text-decoration: underline;
+        cursor: pointer;
+    }
+    .mapslocation{
+        display: inline-block;
+        width: 380px;
+    }
+    .goup{
+        display: inline-block;
+        text-align: left;
+    }
+}
+@media (min-width:1366px) {
+    .footer{
+        display: block; 
+        position: static;
+        text-align: center;
+        width: 100vw;
+        margin-left: calc(683px - 50vw);
+    }
+    
+}
