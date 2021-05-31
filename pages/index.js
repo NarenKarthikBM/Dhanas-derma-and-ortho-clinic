@@ -1,9 +1,9 @@
-import Home_info from '../../../dhanas-clinic/Components/Home_info';
+import Home_info from '../Components/Home_info';
 /* import Home_booknow from '../Components/Home_booknow'; */
-import Contact_us from '../../../dhanas-clinic/Components/Contact_us';
-import Home_about_the_doctors from '../../../dhanas-clinic/Components/Home_about_the_doctors';
-import Layout from '../../../dhanas-clinic/Components/Layout';
-import Gallery from '../../../dhanas-clinic/Components/Gallery';
+import Contact_us from '../Components/Contact_us';
+import Home_about_the_doctors from '../Components/Home_about_the_doctors';
+import Layout from '../Components/Layout';
+import Gallery from '../Components/Gallery';
 
 export default function Home() {
   return (
