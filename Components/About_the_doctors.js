@@ -83,11 +83,11 @@ const About_the_doctors = () => {
         if (active === true) {
             name = "Dr.Jenson Isaac";
             designation = "Orthopaedic Surgeon";
-            src = "/Dr.Jenson Isaac.jpg";
+            src = "/Dr.Jenson.jpg";
         } else {
             name = "Dr.Dhanalakshmi Kathirvel";
             designation = "Dermatologist";
-            src = "/Dr.Dhanalakshmi Kathirvel.jpeg";
+            src = "/Dr.Dhanalakshmi.jpeg";
         }
 
         return(

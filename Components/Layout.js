@@ -14,14 +14,14 @@ export default function Layout({ children , footerstatic, description, title}) {
     const LoginExitOnClick = () => {
         setLogin(false);
     };
-
     return (
-        <div className="container" translate="no">
+        <div className="container">
             <Head>
                 <title>{title}</title>
-                <meta httpEquiv="content-language" content="en"></meta>
-                <link rel="icon" href="/Logo.svg" />
+                <meta charSet="UTF-8" />
+                <link rel="icon" href="/Logo.svg" sizes="any" type="image/svg+xml" />
                 <meta name="description" content={description}></meta>
+                <meta name="author" content="John Doe" />
                 <meta name="format-detection" content="telephone=yes"></meta>
             </Head>
 

@@ -10,8 +10,8 @@ const Gallery = () => {
             <div className="service-gallery">
                 {elements.map((name) => {
                     return (
-                    <div className="service-card">
-                        <img className="gallery-img"  src={'/' + name + '.jpeg'} alt={name} />
+                    <div key={name} className="service-card">
+                        <img key={name} className="gallery-img"  src={'/' + name + '.jpeg'} alt={name} />
                     </div>
                     )
                 })}

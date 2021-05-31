@@ -48,11 +48,11 @@ const Home_Services = () => {
         if (active === true) {
             name = "Dr.Jenson Isaac";
             designation = "Orthopedic Surgeon";
-            src = "/Dr.Jenson Isaac.jpg";
+            src = "/Dr.Jenson.jpg";
         } else {
             name = "Dr.Dhanalakshmi Kathirvel";
             designation = "Dermatologist";
-            src = "/Dr.Dhanalakshmi Kathirvel.jpeg";
+            src = "/Dr.Dhanalakshmi.jpeg";
         }
 
         return(
