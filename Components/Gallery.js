@@ -1,5 +1,4 @@
 import React from 'react';
-import Image from 'next/image';
 
 const Gallery = () => {
     const elements = ['Laser-treatment-room', 'Laser-equipments', 'Dr.Dhanalakshmi-desk', 'Reception']
@@ -12,7 +11,7 @@ const Gallery = () => {
                 {elements.map((name) => {
                     return (
                     <div className="service-card">
-                        <Image className="gallery-img" layout="fill" objectFit="cover" id="service-img-card" src={'/' + name + '.jpeg'} alt={name} />
+                        <img className="gallery-img"  src={'/' + name + '.jpeg'} alt={name} />
                     </div>
                     )
                 })}

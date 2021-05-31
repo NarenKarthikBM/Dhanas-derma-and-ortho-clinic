@@ -2,7 +2,6 @@ import React from 'react';
 import cn from 'classnames';
 import {useState} from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
 
 const Home_Services = () => {
     const [ortho, setOrtho] = useState(false);
@@ -32,7 +31,7 @@ const Home_Services = () => {
             <div className="service-gallery">
                 {elements.map((value) => {
                     return (<div className="service-card">
-                                <Image height={60} width={36} id="service-img-card" src={url} alt="not available" />
+                                <div id="service-img"><img src={url} alt="not available" /></div>
                                 <p className="body-light">{value}</p>
                             </div>)
                 })}
@@ -58,7 +57,7 @@ const Home_Services = () => {
 
         return(
             <div>
-                <div id="doc-img"><Image layout="fill" className="docs-img" src={src} alt="not available" /></div>
+                <div id="doc-img"><img className="docs-img" src={src} alt="not available" /></div>
                 <p className="h1" id="doc-name">{name}</p>
                 <p className="h4-light" id="doc-info">{designation}</p>
             </div>
@@ -78,8 +77,8 @@ const Home_Services = () => {
     return (
         <section className="services">
             <div className="doctor-toggle">
-                <div className={skinclassnames} onClick={() => ToggleOnClick("skin")}><div className="skin-toggle-logo"><Image layout='fill' src="/skin_logo.svg" alt="not available" /></div></div>
-                <div className={orthoclassnames} onClick={() => ToggleOnClick("ortho")}><div className="ortho-toggle-logo"><Image layout='fill' src="/Ortho.svg" alt="not available" /></div></div>
+                <div className={skinclassnames} onClick={() => ToggleOnClick("skin")}><div className="skin-toggle-logo"><img src="/skin_logo.svg" alt="not available" /></div></div>
+                <div className={orthoclassnames} onClick={() => ToggleOnClick("ortho")}><div className="ortho-toggle-logo"><img src="/Ortho.svg" alt="not available" /></div></div>
             </div>
             <DocInfo active={ortho} />
             <Services active={ortho} />

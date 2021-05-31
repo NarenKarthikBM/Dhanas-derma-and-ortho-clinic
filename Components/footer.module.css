@@ -25,7 +25,8 @@
     cursor: pointer;
     
 }
-  
+
+
 .logo{
     display: none;
 }
@@ -64,7 +65,19 @@
     padding-bottom: 1rem;
 }
 
+
 @media (min-width:961px) {
+    .mobilediv{
+        height: 18px;
+        width: 10px;
+        display: inline-block;
+    }
+    
+    .maildiv{
+        height: 19px;
+        width: 32px;
+        display: inline-block;
+    }
     .primaryfooterul{
         display: inline-block;
         text-align: left;
@@ -85,6 +98,8 @@
         display: inline-block;
         margin-left: 1em;
         vertical-align: middle;
+        height:80px;
+        width:77px;
     }
     .footer{
         display: block; 

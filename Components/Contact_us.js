@@ -1,6 +1,4 @@
 import React from 'react';
-import Image from 'next/image';
-import Link from 'next/link';
 
 const Contact_us = () => {
 
@@ -10,10 +8,10 @@ const Contact_us = () => {
                 <div className="watermark">CONTACT US</div>
                 <h1 className="h1">CONTACT US</h1><br/>
                 <div className="mobile-no">
-                    <div className="contact-us-img"><Image layout='fill' objectFit="contain" src="/mobile-dark.svg" alt="mobile"></Image></div> <a href="tel:+919566120848"><p className="h4 contact-us-p"> +91 9566120848</p></a>
+                    <div className="contact-us-img"><img src="/mobile-dark.svg" alt="mobile"></img></div> <a href="tel:+919566120848"><p className="h4 contact-us-p"> +91 9566120848</p></a>
                 </div>
                 <div className="email-id">
-                    <div className="contact-us-img"><Image layout='fill' objectFit="contain" src="/mail-dark.svg" alt="email"></Image></div> <a href="mailto:drdhanuk@gmail.com"><p className="h4 contact-us-p">drdhanuk@gmail.com</p></a>
+                    <div className="contact-us-img"><img src="/mail-dark.svg" alt="email"></img></div> <a href="mailto:drdhanuk@gmail.com"><p className="h4 contact-us-p">drdhanuk@gmail.com</p></a>
                 </div>
             </div>
             <div className="maps-location">

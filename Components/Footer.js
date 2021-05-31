@@ -2,7 +2,6 @@ import React from 'react';
 import styles from './footer.module.css';
 import cn from 'classnames';
 import Link from 'next/link';
-import Image from 'next/image';
 
 const Footer = (props) => {
 
@@ -16,7 +15,7 @@ const Footer = (props) => {
     return (
             <footer className={footerclassnames}>
                 <div className={styles.logo}>
-                    <Link href="/"><Image height={80} width={77} src="/Logo.svg" alt="logo"></Image></Link>
+                    <Link href="/"><img src="/Logo.svg" alt="logo"></img></Link>
                 </div>
                 <ul className={styles.primaryfooterul}>
                     {/* <li className={styles["primaryfooterulli"] + " " + styles["login"]}><p className={styles.footeritem} onClick={HandleLoginOnClick}>LOGIN</p></li> */}
@@ -28,8 +27,8 @@ const Footer = (props) => {
                     <li className={styles["primaryfooterulli"] + " " + styles["aboutthedoctors"]}><Link href="/aboutthedoctors"><p className={styles.footeritem}>ABOUT</p></Link></li>
                 </ul>
                 <ul className={styles.secondaryfooterul}>
-                    <li className={styles.secondaryfooterli}><Image height={18} width={10} src="/mobile-white.svg" alt="mobie"></Image> <a href="tel:+919566120848"><p className={styles.secondaryfooterp}>+91 9566120848</p></a></li>
-                    <li className={styles['secondaryfooterli'] + styles['styles.secondaryfootermailimg']}><Image height={19} width={32} src="/mail-white.svg" alt="email"></Image> <a href="mailto:drdhanuk@gmail.com"><p className={styles.secondaryfooterp}>drdhanuk@gmail.com</p></a></li>
+                    <li className={styles.secondaryfooterli}><div className={styles.mobilediv}><img src="/mobile-white.svg" alt="mobie"></img></div> <a href="tel:+919566120848"><p className={styles.secondaryfooterp}>+91 9566120848</p></a></li>
+                    <li className={styles['secondaryfooterli'] + styles['styles.secondaryfootermailimg']}><div className={styles.maildiv}><img src="/mail-white.svg" alt="email"></img></div> <a href="mailto:drdhanuk@gmail.com"><p className={styles.secondaryfooterp}>drdhanuk@gmail.com</p></a></li>
                 </ul>
                 <div className={styles.mapslocation}>
 

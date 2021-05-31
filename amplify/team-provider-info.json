@@ -1,0 +1,15 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-dhanasclinic-dev-222502-authRole",
+      "UnauthRoleArn": "arn:aws:iam::241632102797:role/amplify-dhanasclinic-dev-222502-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::241632102797:role/amplify-dhanasclinic-dev-222502-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-dhanasclinic-dev-222502-deployment",
+      "UnauthRoleName": "amplify-dhanasclinic-dev-222502-unauthRole",
+      "StackName": "amplify-dhanasclinic-dev-222502",
+      "StackId": "arn:aws:cloudformation:us-east-1:241632102797:stack/amplify-dhanasclinic-dev-222502/caa0cc20-c167-11eb-aae6-12a7f5de922f",
+      "AmplifyAppId": "d3igev51dsrjmc"
+    }
+  }
+}

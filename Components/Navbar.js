@@ -3,7 +3,6 @@ import styles from './navbar.module.css';
 import cn from 'classnames';
 import {useState} from 'react';
 import Link from 'next/link';
-import Image from 'next/image'
 
 const Navbar = (props) => {
     const [navbar, setNavbar] = useState(false);
@@ -33,7 +32,7 @@ const Navbar = (props) => {
             <div className={styles.navbar}>
                 <nav className={navclassnames}>
                     <ul className={styles.navul}>
-                        <li className={styles["navli"] + " " + styles["logo"] + " " + styles['navlogo']}><Link href="/"><Image height={60} width={50} src="/Logo.svg" alt="not available"></Image></Link></li>
+                        <li className={styles["navli"] + " " + styles["logo"] + " " + styles['navlogo']}><Link href="/"><img height={60} width={50} src="/Logo.svg" alt="not available"></img></Link></li>
                         <li className={styles.navli}><Link href="/"><p className={styles.navp}>HOME</p></Link></li>
                         {/* <li className={styles.navli}><p className={styles.navp} onClick={HandleLoginOnClick}>DASHBOARD</p></li> */}
                         {/* <li className={styles.navli}><p className={styles.navp} onClick={HandleLoginOnClick}>BOOK NOW</p></li> */}
@@ -44,8 +43,8 @@ const Navbar = (props) => {
                     </ul>
                 </nav>
                 <div className={styles.mobilenav}>
-                    <div className={styles.logo}><Link href="/"><Image height={55} width={50} src="/Logo.svg" alt="not available"></Image></Link></div>
-                    <div className={styles.navtoggle}><Image height={24} width={33} src={src} alt="not available" onClick={HandleNavToggleOnClick}></Image></div>
+                    <div className={styles.logo}><Link href="/"><img src="/Logo.svg" alt="not available"></img></Link></div>
+                    <div className={styles.navtoggle}><img src={src} alt="not available" onClick={HandleNavToggleOnClick}></img></div>
                 </div>
             </div>
     );

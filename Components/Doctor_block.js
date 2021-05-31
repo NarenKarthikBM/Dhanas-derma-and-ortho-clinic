@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import Image from 'next/image';
 import Link from 'next/link';
 
 const Doctor_Block = ({name, designation, img}) => {
@@ -21,7 +20,7 @@ const Doctor_Block = ({name, designation, img}) => {
 
         return(
             <div className="service-card">
-                <Image height={60} width={36} id="service-img-card" src={url} alt="not available" />
+                <div id="service-img"><img src={url} alt="not available" /></div>
                 <p className="body-light">{elements[service]}</p>
             </div>
         );
@@ -66,16 +65,16 @@ const Doctor_Block = ({name, designation, img}) => {
     return (
         <div className="doctor-block">
             <div className="doc-pic">
-                <Image layout="fill" src={img} alt="docpic1" className="img-rounded"></Image>
+                <img src={img} alt="docpic1" className="img-rounded"></img>
             </div>
             <div className="doc-info">
                 <div className="h2">{name}</div>
                 <div className="body-light">{designation}</div>
             </div>
             <div className="services-carousel">
-                <div className="service-controls" onClick={PrevbtnOnClick}><Image height={50} width={50} src="/prev_btn.svg" alt="next-service"></Image></div>
-                <Services />
-                <div className="service-controls next-btn" onClick={NextbtnOnClick}><Image height={50} width={50} src="/prev_btn.svg" alt="next-service"></Image></div><br />
+                <div onClick={() => PrevbtnOnClick()}><div className="service-controls"><img src="/prev_btn.svg" alt="next-service"></img></div></div>
+                    <Services />
+                <div onClick={() => NextbtnOnClick()}><div className="service-controls next-btn"><img src="/prev_btn.svg" alt="next-service"></img></div></div><br />
                 <Link href="/services"><div className="body-light-light more-services">SEE MORE SERVICES</div></Link>
             </div>
         </div>
