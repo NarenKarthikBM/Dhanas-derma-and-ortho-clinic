@@ -6,6 +6,7 @@ body{
   margin: 0;
   overflow-x: hidden;
   font-family: oswald, sans-serif;
+  font-display: swap;
 }
 
 img{
@@ -33,6 +34,7 @@ img{
   font-size: 5rem;
   opacity: 0.05;
   z-index: -1;
+  font-display: swap;
 }
 
 .info{
@@ -44,22 +46,26 @@ img{
   font-weight: 400;
   color: var(--primary);
   font-size: 2.5rem;
+  font-display: swap;
 }
 
 .h2{
   font-weight: 400;
   color: var(--primary);
   font-size: 1.5rem;
+  font-display: swap;
 }
 
 .body-light-light{
   color: var(--tertiary);
   font-weight: 300;
+  font-display: swap;
 }
 
 .body-light{
   color: var(--primary);
   font-weight: 300;
+  font-display: swap;
 }
 
 .btn{
@@ -166,6 +172,7 @@ img{
   font-weight: 400;
   display: inline-block;
   color: var(--primary);
+  font-display: swap;
 }
 
 footer{
@@ -232,6 +239,7 @@ footer{
   font-size: 1rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
+  font-display: swap;
 }
 
 .bg-blur{
@@ -275,6 +283,7 @@ footer{
   font-weight: 400;
   color: var(--primary);
   font-size: 2.5rem;
+  font-display: swap;
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -519,11 +528,26 @@ input{
   margin-bottom: 0s;
 }
 
+.static-img{
+  height: 200px;
+  width: 300px;
+  border: 3px solid var(--primary);
+  margin-right: auto;
+  margin-left: auto;
+}
+
 @media (min-width:961px){
   .maps{
     width: 500px;
     height: 300px;
     border: 3px solid var(--primary);
+  }
+  .static-img{
+    height: 300px;
+    width: 500px;
+    border: 3px solid var(--primary);
+    margin-right: auto;
+    margin-left: auto;
   }
   .container{
     margin-top: 6em;

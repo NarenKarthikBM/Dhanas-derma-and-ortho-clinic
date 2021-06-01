@@ -19,7 +19,7 @@ export default function Layout({ children , footerstatic, description, title}) {
             <Head>
                 <title>{title}</title>
                 <meta charSet="UTF-8" />
-                <link rel="icon" href="/Logo.svg" sizes="any" type="image/svg+xml" />
+                <link rel="icon" href="favicon.ico" type="image/x-icon" />
                 <meta name="description" content={description}></meta>
                 <meta name="author" content="John Doe" />
                 <meta name="format-detection" content="telephone=yes"></meta>
