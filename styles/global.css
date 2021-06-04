@@ -115,6 +115,9 @@ img{
 .contact-us{
   margin: 3.5em 3.5em 0 3.5em;
 }
+.events{
+  margin: 3.5em 3.5em 0 3.5em;
+}
 .gallery{
   margin: 3.5em 3.5em 0 3.5em;
 }
@@ -165,6 +168,12 @@ img{
 
 .email-id{
   text-align: center;
+}
+
+.body{
+  font-weight: 400;
+  color: var(--primary);
+  font-display: swap;
 }
 
 .h4{
@@ -460,6 +469,18 @@ input{
   position: relative;
   width: 150px;
   height: 120px;
+  border: 1px solid var(--primary);
+  border-radius: 10%;
+  text-align: center;
+  margin:1em 2em;
+  z-index: -1;
+}
+
+.gallery-card{
+  display:inline-block;
+  position: relative;
+  width: 200px;
+  height: 200px;
   border: 1px solid var(--primary);
   border-radius: 10%;
   text-align: center;

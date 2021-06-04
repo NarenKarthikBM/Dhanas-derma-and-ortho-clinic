@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Gallery = () => {
-    const elements = ['Laser-treatment-room', 'Laser-equipments', 'Dr.Dhanalakshmi-desk', 'Reception']
+    const elements = ['Laser-treatment-room.webp', 'Laser-equipments.webp', 'Dr.Dhanalakshmi-desk.webp', 'Reception.webp']
     
     return(
         <section className="gallery">
@@ -10,8 +10,8 @@ const Gallery = () => {
             <div className="service-gallery">
                 {elements.map((name) => {
                     return (
-                    <div key={name} className="service-card">
-                        <img key={name} className="gallery-img"  src={'/' + name + '.jpeg'} alt={name} />
+                    <div key={name} className="gallery-card">
+                        <img key={name} className="gallery-img"  src={'/' + name } alt={name} />
                     </div>
                     )
                 })}

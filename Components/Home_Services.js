@@ -1,7 +1,7 @@
 import React from 'react';
-import cn from 'classnames';
 import {useState} from 'react';
-import Link from 'next/link';
+import styles from './homeservices.module.css';
+import cn from 'classnames';
 
 const Home_Services = () => {
     const [ortho, setOrtho] = useState(false);
@@ -27,12 +27,17 @@ const Home_Services = () => {
             url = '/skin_logo.svg'
         }
 
+        const serviceinfocn = "body-light" + ' ' + styles.serviceinfo
+
         return(
-            <div className="service-gallery">
+            <div className={styles.servicegallery}>
                 {elements.map((value) => {
-                    return (<div className="service-card">
+                    return (<div className={styles.servicecard}>
                                 <div id="service-img"><img src={url} alt="not available" /></div>
-                                <p className="body-light">{value}</p>
+                                <p className="body">{value}</p>
+                                <hr className={styles.divider} />
+                                <p className={serviceinfocn}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                                when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
                             </div>)
                 })}
             </div>
@@ -48,11 +53,11 @@ const Home_Services = () => {
         if (active === true) {
             name = "Dr.Jenson Isaac";
             designation = "Orthopedic Surgeon";
-            src = "/Dr.Jenson.jpg";
+            src = "/Dr.Jenson.webp";
         } else {
             name = "Dr.Dhanalakshmi Kathirvel";
             designation = "Dermatologist";
-            src = "/Dr.Dhanalakshmi.jpeg";
+            src = "/Dr.Dhanalakshmi.webp";
         }
 
         return(

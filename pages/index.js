@@ -4,6 +4,7 @@ import Contact_us from '../Components/Contact_us';
 import Home_about_the_doctors from '../Components/Home_about_the_doctors';
 import Layout from '../Components/Layout';
 import Gallery from '../Components/Gallery';
+import Events from '../Components/Events';
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       {/* <Home_booknow /> */}
       <Home_about_the_doctors />
       <Contact_us />
+      <Events />
       <Gallery />
     </Layout>
   )

@@ -7,8 +7,8 @@ const Home_about_the_doctors = () => {
     <section className="about-the-doctors">
         <div className="watermark">CONSULTING DOCTORS</div>
         <h1 className="h1">CONSULTING DOCTORS</h1><br/>
-        <Doctor_Block name="Dr.Dhanalakshmi" designation="Dermatologist" img="/Dr.Dhanalakshmi.jpeg" />
-        <Doctor_Block name="Dr.Jenson Isaac" designation="Orthopedic Surgeon" img="/Dr.Jenson.jpg" />
+        <Doctor_Block name="Dr.Dhanalakshmi" designation="Dermatologist" img="/Dr.Dhanalakshmi.webp" />
+        <Doctor_Block name="Dr.Jenson Isaac" designation="Orthopedic Surgeon" img="/Dr.Jenson.webp" />
     </section>
     );
 };

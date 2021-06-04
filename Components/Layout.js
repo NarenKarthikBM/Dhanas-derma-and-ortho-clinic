@@ -21,7 +21,7 @@ export default function Layout({ children , footerstatic, description, title}) {
                 <meta charSet="UTF-8" />
                 <link rel="icon" href="favicon.ico" type="image/x-icon" />
                 <meta name="description" content={description}></meta>
-                <meta name="author" content="John Doe" />
+                <meta name="author" content="Naren Karthik B M" />
                 <meta name="format-detection" content="telephone=yes"></meta>
             </Head>
 
