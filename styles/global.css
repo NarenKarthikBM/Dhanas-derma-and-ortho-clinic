@@ -55,7 +55,11 @@ img{
   font-size: 1.5rem;
   font-display: swap;
 }
-
+.body-white{
+  font-weight: 400;
+  color: var(--white);
+  font-display: swap;
+}
 .body-light-light{
   color: var(--tertiary);
   font-weight: 300;
