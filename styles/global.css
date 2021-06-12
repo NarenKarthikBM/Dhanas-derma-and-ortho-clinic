@@ -14,18 +14,18 @@ img{
   width: 100%;
   z-index: -1;
 }
-
-#service-img{
-  height:70px;
-  width: 36px;
-  object-fit:contain;
-  margin-left: auto;
-  margin-right: auto;
+.textcenter{
+  display: flex;
+  justify-content: center;
+  align-content: center;
 }
-
-.container{
-  margin-top: 3.75em;
-  margin-bottom: 12em;
+.loginlink{
+  margin-top: 1em;
+  margin-left: 1em;
+}
+.logo{
+  height: 80px;
+  width: 77px;
 }
 .watermark{
   position: absolute;
@@ -55,17 +55,17 @@ img{
   font-size: 1.5rem;
   font-display: swap;
 }
-.body-white{
-  font-weight: 400;
-  color: var(--white);
-  font-display: swap;
-}
+
 .body-light-light{
   color: var(--tertiary);
   font-weight: 300;
   font-display: swap;
 }
-
+.body-white{
+  font-weight: 400;
+  color: var(--white);
+  font-display: swap;
+}
 .body-light{
   color: var(--primary);
   font-weight: 300;
@@ -93,157 +93,12 @@ img{
   opacity: 0.9;
 }
 
-.gallery-grid{
-  display: grid;
-  grid-template-columns: 8rem 8rem;
-  grid-template-rows: 6rem 6rem 6rem;
-  gap: 0px;
-  margin-top:2em;
-  justify-content: center;
-  align-content: center;
-}
-
-.pic{
-  background-color: var(--primary);
-}
-
-.pic2{
-  background: var(--watermark);
-  border: 1px solid var(--primary);
-}
-
-.book-now{
-  display: none;
-}
-
-.contact-us{
-  margin: 3.5em 3.5em 0 3.5em;
-}
-.events{
-  margin: 3.5em 3.5em 0 3.5em;
-}
-.gallery{
-  margin: 3.5em 3.5em 0 3.5em;
-}
-
-.contact-us-p{
-  display: inline-block;
-  cursor: pointer;
-  text-decoration: underline;
-  margin-left: 0.2em;
-}
-
-.maps{
-  width: 300px;
-  height: 200px;
-  border: 3px solid var(--primary);
-}
-
-.maps-location{
-  text-align: center;
-  margin-top: 1em;
-}
-
-.mobile-no .contact-us-img{
-  display: inline-block;
-  position: relative;
-  vertical-align: middle;
-  z-index: -1;
-  width: 30px;
-  height: 50px;
-}
-
-.email-id .contact-us-img{
-  display: inline-block;
-  position: relative;
-  vertical-align: middle;
-  z-index: -1;
-  width: 70px;
-  height: 40px;
-}
-
-.about-the-doctors{
-  display: none;
-}
-
-.mobile-no{
-  text-align: center;
-}
-
-.email-id{
-  text-align: center;
-}
-
-.body{
-  font-weight: 400;
-  color: var(--primary);
-  font-display: swap;
-}
-
 .h4{
   font-size: 1.5rem;
   font-weight: 400;
   display: inline-block;
   color: var(--primary);
   font-display: swap;
-}
-
-footer{
-  background: var(--primary);
-  position: fixed;
-  display: block;
-  bottom: 0;
-  right: 0;
-  width: 100vw;
-  margin-bottom: -1em;
-}
-
-.primary-footer-ul{
-  list-style-type: none;
-  display: grid;  
-  grid-template-columns: auto auto;
-  grid-template-rows: auto auto;
-  text-align: center;
-}
-
-.primary-footer-ul li{
-  margin: -0.4em;
-}
-
-.footer-item{
-  color: var(--white);
-  cursor: pointer;
-  
-}
-
-.logo{
-  display: none;
-}
-
-#login{
-  display: none;
-}
-
-#dashboard{
-  display: none;
-}
-
-#book-now{
-  display: none;
-}
-
-.secondary-footer-ul{
-  display: none;
-}
-
-.go-up{
-  display: none;
-}
-
-.copyrights-div{
-  display: block;
-  background:var(--tertiary);
-  text-align: center;
 }
 
 #body-white{
@@ -255,73 +110,11 @@ footer{
   font-display: swap;
 }
 
-.bg-blur{
-  display: block;
-  position: fixed;
-  left: 0;
-  top: 0;
-  overflow-y: hidden;
-  width: 100vw;
-  height: 100vh;
-  background: var(--bg-blur);
-}
-
-.login-popup{
-  display: block;
-  margin-left: auto;
-  margin-top: calc(50vh - 200px);
-  margin-right: auto;
-  max-width: 375px;
-  height: 400px;
-  background: var(--login-bg);
-  border: 1px solid var(--primary);
-  padding: 1em;
-  z-index: 1;
-  text-align: center;
-}
-
-#login-logo{
-  float: left;
-  padding-top: 0.2em;
-}
-
-#exit{
-  float: right;
-  margin-right: 0.2em;
-  margin-top: 0.2em;
-  cursor: pointer;
-}
-
-.login-h1{
-  font-weight: 400;
-  color: var(--primary);
-  font-size: 2.5rem;
-  font-display: swap;
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
 .input-group{
-  display: -ms-flexbox; /* IE10 */
-  display: flex;
-  width: 100%;
-  height: 4rem;
-  justify-content: center;
-}
-
-.input-groups{
-  margin-bottom: auto;
-  margin-top: auto;
-}
-
-.input-label{
   display: block;
-  float: left;
-  margin-bottom: 0;
-  margin-left: 1rem;
-  font-size: 1.25rem;
-  color: var(--primary);
-  margin-top: 1em;
+  width: 100%;
+  text-align: center;
+  margin-top: 4em;
 }
 
 .icon-label {
@@ -336,45 +129,84 @@ footer{
 }
 
 input{
-  max-width: calc(100% - 50px);
-  margin: 0;
-  border-radius: 0 50px 50px 0; 
+  width: 75%;
+  max-width: 450px;
+  height: 1.5em;
+  margin: 1rem 0;
+  border-radius: 50px 50px 50px 50px; 
   border: 1px solid var(--primary);
-  font-size: 1.5rem;
-  padding: 0.8rem;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
   font-family:  oswald, sans-serif;
+  box-shadow: 3px 3px 6px #0808083d;
+}
+input::placeholder{
+  color: var(--grey);
+  font-weight: 300;
+}
+.h4-light{
+  font-weight: 300;
+  color: var(--primary);
+  font-size: 1.5rem;
+  margin-top: 0;
 }
 
-#login-btn{
-  width: 235px;
-  height: 2rem;
-  margin-left: calc(50% - 235px/2);
-  margin-top: 3rem;
-  cursor: pointer;
-  opacity: 0.9;
-  padding-top: 0.75rem;
-  font-size: 1.25rem;
+.dashcards{
+  display: grid;
+  grid-template-columns: auto;
+  padding: 1em;
+  margin-top: 5em;
+  margin-bottom: 5em;
 }
 
-#login-btn:hover{
-  opacity:1
+.static-img{
+  width: 95%;
+  height: 200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-#password-label{
+.maps-img{
+  object-fit: contain;
+}
+
+iframe{
+  width: 100%;
+  height: 200px;
+  border:0px;
+}
+.iframe{
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+}
+.profileinfo{
+  display: none;
+}
+.patientcards{
+  display: grid;
+  grid-template-columns: auto;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 5em;
+  margin-bottom: 6em;
+}
+.patientprofileinfo{
+  margin-bottom: 2em;
+}
+.appointmentcards{
+  display: grid;
+  grid-template-columns: auto;
+  margin-right: auto;
+  margin-left: auto;
   margin-top: 1em;
 }
-
-.forgotpassword-text{
-  display: block;
-  float: left;
-  margin-top: 0;
-  margin-left: 1rem;
-  font-size: 1.25rem;
-  color: var(--primary);
+.bookingcards{
+  margin-bottom: 6em;
 }
-
 .doctor-toggle{
   text-align: center;
+  margin-top: 4.5em;
 }
 
 .toggle-logo{
@@ -382,7 +214,7 @@ input{
   vertical-align: middle;
   border-radius: 50%;
   box-sizing: border-box;
-  border: 1px solid var(--primary);
+  border: 1px solid var(--secondary);
   padding: 0.6em;
   margin: 0.5em;
   width: 77px;
@@ -410,312 +242,58 @@ input{
 
 .active-logo{
   z-index: -1;
-  border: 10px solid var(--primary);
+  border: 10px solid var(--tertiary);
   padding: 0.2em;
 }
-
-#next-img{
-  transform: rotate(180deg);
-}
-
-.about_the_doctors{
-  display: block;
-  text-align: center;
-  margin: 0em 3.5em
-}
-
-.docs-img{
-  border: 1px solid var(--primary);
-  border-radius: 50%;
-}
-
-#doc-img{
-  display: block;
-  z-index: -1;
-  position: relative;
-  border-radius: 50%;
-  box-sizing: border-box;
-  border: 1px solid var(--primary);
-  margin: 0.5em;
-  width: 150px;
-  height: 150px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-#doc-name{
-  margin-bottom: 0.3em;
-}
-
-.h4-light{
-  font-weight: 300;
-  color: var(--primary);
-  font-size: 1.5rem;
-  margin-top: 0;
-}
-
-#next-img{
-  display: inline-block;  
-  vertical-align: middle;
-}
-
-#prev-img{
-  display: inline-block;
-  vertical-align: middle;
-}
-
-.service-gallery{
-  text-align: center;
-}
-
-.service-card{
-  display:inline-block;
-  position: relative;
-  width: 150px;
-  height: 120px;
-  border: 1px solid var(--primary);
-  border-radius: 10%;
-  text-align: center;
-  margin:1em 2em;
-  z-index: -1;
-}
-
-.gallery-card{
-  display:inline-block;
-  position: relative;
-  width: 200px;
-  height: 200px;
-  border: 1px solid var(--primary);
-  border-radius: 10%;
-  text-align: center;
-  margin:1em 2em;
-  z-index: -1;
-}
-
-.service-card p{
-  margin-top: 0.2em;
-}
-
-.gallery-img{
-  border-radius: 10%;
-}
-
-.small-text{
-  color: var(--primary);
-  font-size: 1rem;
-  cursor: pointer;
-  text-decoration: underline;
-}
-
-.services{
-  display: block;
-  text-align: center;
-}
-
-.services-carousel{
-  display: grid;
-  grid-template-columns: auto auto auto;
-  align-items: center;
-  justify-items: center;
-}
-
-.services-group{
-  width: fit-content;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-.next-btn{
-  transform: rotate(180deg);
-  position: relative;
-  cursor: pointer;
-  z-index: -1;
-}
-
-.more-services{
-  text-decoration: underline;
-  margin-top: 0.5em;
-  cursor: pointer;
-}
-
-.service{
-  width: 150px;
-  height: 120px;
-  border: 1px solid var(--primary);
-  border-radius: 10%;
-  text-align: center;
-  margin:0 2em;
-}
-
-#service-img-card{
-  box-sizing: inherit;
-  height: 60%;
-  margin-bottom: 0s;
-}
-
-.static-img{
-  height: 200px;
-  width: 300px;
-  border: 3px solid var(--primary);
-  margin-right: auto;
-  margin-left: auto;
-}
-
-@media (min-width:961px){
-  .maps{
-    width: 500px;
-    height: 300px;
-    border: 3px solid var(--primary);
-  }
-  .static-img{
-    height: 300px;
-    width: 500px;
-    border: 3px solid var(--primary);
-    margin-right: auto;
-    margin-left: auto;
-  }
-  .container{
-    margin-top: 6em;
-    margin-bottom: 0em;
-  }
-  .info{
+@media (min-width:720px){
+  .dashcards{
     display: grid;
-    margin-top: 2em;
-    grid-template-columns: 60% 40%;
-  }
-  .contact-us{
-    display: grid;
-    grid-template-columns: 50% 50%;
-  }
-  .book-now{
-    display: block;
-    margin: 0em 3.5em;
-  }
-
-  .cta-book-now{
-    border: 1px solid var(--primary);
-    border-radius: 70px;
-    background: var(--tertiary);
-    padding: 0.5rem;
-    width: 10em;
-    text-align: center;
-    display: inline-block;
-    margin-left: 2em;
+    grid-template-columns: auto auto 0px;
+    padding: 1em;
+    margin-top: 5em;
   }
   
-  .primary-footer-ul{
-    display: inline-block;
-    text-align: left;
-    vertical-align: middle;
-    margin-top: 1em;
-    margin-bottom: 1em;
-  }
-  #login{
-    display: block;
-  }
-  #dashboard{
-    display: block;
-  }
-  #book-now{
-    display: block;
-  }
-  footer{
-    display: block; 
-    position: static;
-    text-align: center;
-    width: 100%;
-  }
-  .primary-footer-ul li p{
-    margin:0.5em;
-    font-size: 0.9rem;
-  }
-  .secondary-footer-ul{
-    display: inline-block;
-    text-align: left;
-    vertical-align: middle;
-    margin-top: 1em;
-    list-style-type: none;
-  }
-  .secondary-footer-ul li{
-    margin:0.5em;
-  }
-  .secondary-footer-ul li p{
-    display: inline;
-    font-size: 0.9rem;
-    color:var(--white);
-  }
-  .maps-location{
-    display: inline-block;
-    width: 380px;
-  }
-  .go-up{
-    display: inline-block;
-    text-align: left;
-  }
-  .about-the-doctors{
-    display: block;
-    margin: 2em 3.5em;
-  }
-  .doctor-block{
+}
+@media (min-width:1250px){
+  .dashcards{
     display: grid;
-    grid-template-columns: 20% 40% 40%;
-    align-items: center;
-    justify-items: center;
-    margin-top: 3em;
-    margin-bottom: 3em;
-    text-align: center;
+    grid-template-columns: auto auto auto;
+    padding: 1em;
+    margin-top: 5em;
+    margin-left: 5em;
   }
-  .img-rounded{
-    border-radius: 50%;
+  .profileinfo{
+    display: block;
   }
-  .doc-pic{
-    z-index: -1;
-    position: relative;
-    border-radius: 50%;
-    box-sizing: border-box;
-    border: 1px solid var(--primary);
-    height: 200px;
-    width: 200px;
-  }
-  .last-service{
-    display: inline-block;
-    margin: 0.2em;
-  }
-  .next-service{
-    display: inline-block;
-    margin: 0.2em;
-  }
-  .service-controls{
-    height:50px;
-    width: 50px;
-    vertical-align: middle;
-    z-index: -1;
-    cursor: pointer;
-  }
-  .service-controls:hover{
-    cursor: pointer;
-  }
-  #doctor-info-p{
-    margin: 2em 5em;
-  }
-  #login-item{
-    margin-left: 17em;
+  .patientcards{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    margin-left: 6em;
   }
 }
-@media (min-width:1367px){
-  .container{
-    margin-top: 6em;
-    width:1366px;
-    margin-right:auto;
-    margin-left:auto;
-    margin-bottom: 0em;
+@media (min-width:1300px){
+  .patientcards{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
-
-@media (max-width:412px){
-  .login-popup{
-    width: 80%;
-    text-align: center;
+@media (min-width:1500px){
+  .dashcards{
+    width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
   }
-
+  .bookingcards{
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-left: 20em;
+    width: 1000px;
+  }
+  .doctor-toggle{
+    margin-left: 20em;
+    width: fit-content;
+  }
 }

@@ -1,0 +1,177 @@
+.card{
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background: var(--white);
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    margin-bottom: 0.5em;
+    height: 97%;
+    max-width: 830px;
+}
+.title{
+    font-weight: 400;
+    color: var(--black);
+    font-size: 1rem;
+    font-display: swap;
+}
+.subtitle{
+    font-weight: 300;
+    color: var(--black);
+    font-size: 1rem;
+    font-display: swap;
+}
+.label{
+    font-weight: 300;
+    color: var(--grey);
+    font-size: 1rem;
+    font-display: swap;
+    padding-bottom: 1em;
+}
+.infoblock{
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.block{
+    text-align: left;
+}
+.info{
+    font-weight: 400;
+    color: var(--black);
+    font-size: 1.5rem;
+    font-display: swap;
+    padding-bottom: 1em;
+}
+.btn{
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    padding-left: 3em;
+    padding-right: 3em;
+    margin-bottom: 1em;
+    margin-right: auto;
+    margin-left: auto;
+    width: fit-content;
+    text-align: center;
+    font-weight: 400;
+    color: var(--white);
+    font-size: 1rem;
+    font-display: swap;
+    background: var(--secondary);
+    border: 1px solid var(--nav-highlighter);
+    border-radius: 3em;
+}
+.appointmentsblock{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+.appointmentinfo{
+    text-align: center;
+}
+.finishedapointments{
+    border-right: 1px solid var(--black);
+}
+.appointmenttitle{
+    padding-bottom: 0em;
+}
+.appointmentdetailsblock{
+    padding: 1em;
+}
+.appointment{
+    margin-left: auto;
+    margin-right: auto;
+    background: var(--appointment-card-bg);
+    border: 1px solid var(--secondary);
+    display: grid;
+    grid-template-columns: 25% 40% 35%;
+    margin-bottom: 1em;
+    max-width: 450px;
+}
+.btn:hover{
+    opacity: 0.8;
+}
+.hr{
+    color: var(--grey);
+    width: 100%;
+}
+.pointer{
+    display: none;
+}
+.divider{
+    height: 100%;
+    border-right: 1px solid var(--black);
+    display: grid;
+    grid-template-rows: auto;
+    justify-items: center;
+    align-items: center;
+}
+.appointmentservice{
+    height: 100%;
+    display: grid;
+    grid-template-rows: auto;
+    justify-items: center;
+    align-items: center;
+}
+.active{
+    margin-left: auto;
+    margin-right: auto;
+    background: var(--appointment-card-bg);
+    border: 1px solid var(--secondary);
+    display: grid;
+    grid-template-columns: 25% 40% 35%;
+    margin-bottom: 1em;
+    max-width: 450px;
+}
+@media (max-width:1250px){
+    .infoblock{
+        display: grid;
+        grid-template-columns: auto;
+        justify-items: center;
+        align-items: center;
+    }
+    .label{
+        text-align: center;
+    }
+    .card{
+        max-width: 520px;
+    }
+}
+@media (min-width:1200px){
+    .appointmentdetailsblock{
+        margin-left: 6em;
+        margin-right: 6em;
+    }
+    .timeline{
+        border-left: 1px solid var(--black);
+        margin-top: 0;
+        margin-bottom: 0;
+        height: 100%;
+    }
+    .pointer{
+        display:block;
+        position:absolute;
+        margin-left: -10px;
+        margin-top: -3.5em;
+        justify-self: center;
+        align-self: center ;
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
+        background: var(--secondary);
+    }
+}
+@media (min-width:1500px){
+    .active{
+        margin-left: auto;
+        margin-right: auto;
+        background: var(--appointment-card-bg);
+        display: grid;
+        grid-template-columns: 25% 40% 35%;
+        margin-bottom: 1em;
+        max-width: 450px;
+        border: 2px solid var(--primary);   
+    }
+}

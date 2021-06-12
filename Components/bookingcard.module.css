@@ -1,0 +1,246 @@
+.card{
+    width: 90%;
+    max-width: 450px;
+    padding: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1em;
+    text-align: center;
+    background: var(--white);
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    margin-bottom: 0.5em;
+}
+.cardtitle{
+    padding: 2em;
+}
+.btn{
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    padding-left: 1.25em;
+    padding-right: 1.25em;
+    margin-bottom: 1em;
+    margin-right: auto;
+    margin-left: auto;
+    width: fit-content;
+    text-align: center;
+    font-weight: 400;
+    color: var(--white);
+    font-size: 1rem;
+    font-display: swap;
+    background: var(--secondary);
+    border: 1px solid var(--nav-highlighter);
+    border-radius: 3em;
+}
+.nextbtn{
+    margin-left: 1.5em;
+    margin-top: 0.5em;
+}
+
+.label{
+    font-weight: 300;
+    color: var(--grey);
+    font-size: 1rem;
+    font-display: swap;
+    text-align: center;
+}
+.labelblack{
+    font-weight: 300;
+    color: var(--black);
+    font-size: 1rem;
+    font-display: swap;
+    text-align: center;
+}
+.textalignleft{
+    text-align: left;
+    margin-left: 2em;
+}
+.title{
+    font-weight: 400;
+    color: var(--black);
+    font-size: 3rem;
+    font-display: swap;
+    padding-bottom: 0em;
+    text-align: left;
+    margin-left: 0.75em;
+}
+.dateselect{
+    border-left: 1px solid var(--primary);
+    margin-left: 1em;
+    margin-right: 1em;
+}
+.timeselect{
+    border-left: 1px solid var(--primary);
+    margin-left: 1em;
+    margin-right: 1em;
+    padding-top: 2em;
+}
+.patientselect{
+    border-left: 1px solid var(--primary);
+    margin-left: 1em;
+    margin-right: 1em;
+    padding-top: 2em;
+}
+.times{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 1em;
+}
+.pointer{
+    display:block;
+    position:absolute;
+    margin-left: -10px;
+    margin-top: -3.5em;
+    justify-self: center;
+    align-self: center ;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background: var(--secondary);
+}
+.timepointer{
+    display:block;
+    position:absolute;
+    margin-left: -10px;
+    margin-top: -17em;
+    justify-self: center;
+    align-self: center ;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background: var(--secondary);
+}
+.patientpointer{
+    display:block;
+    position:absolute;
+    margin-left: -10px;
+    margin-top: -18em;
+    justify-self: center;
+    align-self: center ;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background: var(--secondary);
+}
+.faded{
+    opacity: 0.8;
+}
+.faded:hover{
+    opacity: 0.9;
+}
+.patientselector{
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-left: 1.5em;
+    padding:1em;
+    justify-items: center;
+    align-items: center;
+}
+.inputgrp{
+    text-align: left;
+}
+.patientname{
+    margin-top: 0%;
+    text-align: left;
+    margin-left: 2em;
+}
+.patientage{
+    margin-top: 0%;
+    width: 5em;
+    margin-left: 2em;
+}
+.bgblur{
+    z-index: 3;
+    position: fixed;
+    left: 0;
+    top: 0;
+    min-height: 650px;
+    height: 100%;
+    width: 100%;
+    overflow-y: hidden;
+    background: rgba(0, 0, 0, 0.7);
+}
+.confirmappointment{
+    position: absolute;
+    background: var(--white);
+    max-width: 500px;
+    width: 80%;
+    padding: 1em;
+    top: 5%;
+    z-index: 4;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+.appointmentinfo{
+    display: grid;
+    margin-top: 1em;
+    grid-template-columns: 60% 40%;
+}
+.subtitle{
+    font-size: 1.5rem;
+    text-align: center;
+}
+.gridblock{
+    width: 100%;
+    padding-top:0.5em;
+    padding-bottom: 0.5em;
+    text-align: center;
+}
+.borderright{
+    border-right: 1px solid var(--black);
+}
+.bordertop{
+    border-top: 1px solid var(--black);
+    border-bottom: 1px solid var(--black);
+}
+.logo{
+    background: var(--nav-highlighter);
+    margin: 0.5em 0em;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    border: 1px solid var(--secondary);
+    padding: 0.3em;
+    margin-right: auto;
+    margin-left: auto;
+}
+.mtop{
+    margin-top: 1em;
+}
+@media (max-width:400px) {
+    .btn{
+        padding-left: 0.75em;
+        padding-right: 0.75em;
+    }
+}
+@media (max-height:600px) {
+    .subtitle{
+        font-size: 1em;
+    }
+    .title{
+        font-weight: 400;
+        color: var(--black);
+        font-size: 2rem;
+        font-display: swap;
+        padding-bottom: 0em;
+        text-align: left;
+        margin-left: 0.75em;
+    }
+    .label{
+        font-size: 0.75em;
+    }
+    .btn{
+        font-size: 0.75em;
+    }
+    .mtop{
+        display: inline-block;
+        margin-right: 1em;
+        margin-left: 1em;
+    }
+}

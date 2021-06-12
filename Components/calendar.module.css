@@ -1,0 +1,61 @@
+.card{
+    width: fit-content;
+    padding: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1em;
+    text-align: center;
+    background: var(--white);
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    margin-bottom: 0.5em;
+    height: 97%;
+    max-height: 400px;
+    max-width: 830px;
+}
+.calendartable{
+    margin-left: auto;
+    margin-right: auto;
+}
+.monthname{
+    font-size: 1.5rem;
+    display: inline;
+    vertical-align: middle;
+}
+
+.tablecell{
+    padding: 1rem;
+}
+.weekday{
+    font-size: 1rem;
+    font-weight: 300;
+}
+.highlighter{
+    border-radius: 50%;
+    background: var(--nav-highlighter);
+    border: 1px solid var(--secondary);
+}
+.disabled{
+    color: var(--grey);
+}
+.next{
+    display: inline-block;
+    height: 1.8em;
+    width: 2em;
+    margin-left: 1em;
+    vertical-align: middle;
+    cursor: pointer;
+}
+.prev{
+    display: inline-block;
+    height: 1.8em;
+    width: 2em;
+    margin-right: 1em;
+    vertical-align: middle;
+    cursor: pointer;
+}
+@media (max-width:400px){
+    .tablecell{
+        padding: 0.5rem;
+    }
+}

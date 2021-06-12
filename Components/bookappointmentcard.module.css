@@ -1,0 +1,61 @@
+.card{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background: var(--white);
+    margin-bottom: 1em;
+    padding-top: 1em;
+}
+.cardtitle{
+    font-weight: 300;
+    color: var(--grey);
+    font-size: 1rem;
+    font-display: swap;
+    padding-bottom: 1em;
+}
+.btnblock{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.btn{
+    padding-top: 2.2rem;
+    padding-bottom: 2.2rem;
+    width: 100%;
+    text-align: center;
+    font-weight: 400;
+    color: var(--white);
+    font-size: 1rem;
+    font-display: swap;
+}
+.orthobtn{
+    background: var(--secondary);
+}
+.skinbtn{
+    background: var(--tertiary);
+}
+.skinlogo{
+    height: 50px;
+    width: 32px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 0.3em;
+}
+.orthologo{
+    height: 50px;
+    width: 32px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 0.3em;
+}
+.btntext{
+    font-weight: 300;
+    color: var(--white);
+    font-size: 1rem;
+    font-display: swap;
+}
+@media (min-width:720px){
+    .card{
+      margin-bottom: 2em;
+    }
+}

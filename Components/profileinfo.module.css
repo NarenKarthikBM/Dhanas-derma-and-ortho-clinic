@@ -1,0 +1,106 @@
+.card{
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background: var(--white);
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    max-width: 375px;
+}
+.roundedlogo{
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    border: 1px solid var(--primary);
+    text-align: center;
+    font-weight: 400;
+    color: var(--tertiary);
+    font-size: 5rem;
+    font-display: swap;
+    margin-right: auto;
+    margin-left: auto;
+}
+.title{
+    font-weight: 400;
+    color: var(--black);
+    font-size: 2rem;
+    font-display: swap;
+    padding-bottom: 1em;
+}
+.label{
+    font-weight: 300;
+    color: var(--grey);
+    font-size: 1rem;
+    font-display: swap;
+    padding-bottom: 0em;
+}
+.infoblock{
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.block{
+    text-align: left;
+}
+.info{
+    font-weight: 400;
+    color: var(--black);
+    font-size: 1.5rem;
+    font-display: swap;
+    padding-bottom: 1em;
+}
+.btn{
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    padding-left: 3em;
+    padding-right: 3em;
+    margin-bottom: 1em;
+    margin-right: auto;
+    margin-left: auto;
+    width: fit-content;
+    text-align: center;
+    font-weight: 400;
+    color: var(--white);
+    font-size: 1rem;
+    font-display: swap;
+    background: var(--secondary);
+    border: 1px solid var(--nav-highlighter);
+    border-radius: 3em;
+}
+.appointmentsblock{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.appointmentinfo{
+    text-align: center;
+}
+.finishedapointments{
+    border-right: 1px solid var(--black);
+}
+.appointmenttitle{
+    padding-bottom: 0;
+}
+.passwordbtn{
+    background: var(--btn-3);
+    border: 1px solid orange;
+}
+.btn:hover{
+    opacity: 0.8;
+}
+.email{
+    font-size: 1.1rem;
+}
+@media (max-width:1250px){
+    .infoblock{
+        display: grid;
+        grid-template-columns: auto;
+        justify-items: center;
+        align-items: center;
+    }
+    .label{
+        text-align: center;
+    }
+}

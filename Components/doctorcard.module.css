@@ -1,0 +1,45 @@
+.card{
+    width: 380px;
+    padding: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1em;
+    text-align: center;
+    background: var(--white);
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    margin-bottom: 0.5em;
+    height: fit-content;
+    max-width: 830px;
+    text-align: center;
+}
+.docpic{
+    height: 80px;
+    width: 80px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 0.5em;
+}
+.docimg{
+    border-radius: 50%;
+    border: 1px solid var(--secondary);
+}
+.title{
+    font-weight: 400;
+    color: var(--black);
+    font-size: 2rem;
+    font-display: swap;
+    vertical-align: middle;
+}
+.subtitle{
+    font-size: 1em;
+}
+.inlineblock{
+    vertical-align: middle;
+    display: inline-block;
+}
+@media (max-width:961px) {
+    .card{
+        display: none;
+    }
+}
