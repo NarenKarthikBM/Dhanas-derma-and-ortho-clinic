@@ -19,7 +19,7 @@ const Doctor_Block = ({name, designation, img}) => {
         }
 
         return(
-            <div className="service-card">
+            <div className="service-card whitebg">
                 <div id="service-img"><img src={url} alt="not available" /></div>
                 <p className="body-light">{elements[service]}</p>
             </div>

@@ -11,8 +11,10 @@ const About_the_doctors = () => {
     const ToggleOnClick = (active) => {
         if (active === 'skin' ) {
             setOrtho(false)
+            SetService(0)
         } else {
             setOrtho(true)
+            SetService(0)
         }
     }
 
@@ -30,7 +32,7 @@ const About_the_doctors = () => {
         }
 
         return(
-            <div className="service-card">
+            <div className="service-card whitebg">
                 <div id="service-img"><img src={url} alt="not available" /></div>
                 <p className="body-light">{elements[service]}</p>
             </div>

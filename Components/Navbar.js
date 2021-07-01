@@ -39,7 +39,7 @@ const Navbar = (props) => {
                         <li className={styles.navli}><Link href="/contactus"><p className={styles.navp}>CONTACT US</p></Link></li>
                         <li className={styles.navli}><Link href="/services"><p className={styles.navp}>SERVICES</p></Link></li>
                         <li className={styles.navli}><Link href="/aboutthedoctors"><p className={styles.navp} id>ABOUT</p></Link></li>
-                        {/* <li className={styles["navli"] + " " + styles["loginitem"]}><p className={styles.navp} onClick={HandleLoginOnClick}>LOGIN</p></li> */}
+                        {/* <li className={styles["navli"] + " " + styles["loginitem"]}><p className={styles.navp} onClick={HandleLoginOnClick}>LOGIN/SIGN UP</p></li> */}
                     </ul>
                 </nav>
                 <div className={styles.mobilenav}>
