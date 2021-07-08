@@ -24,7 +24,7 @@ const About_the_doctors = () => {
         let url;
 
         if (ortho === true) {
-            elements = ['Fracture Management', 'POP treatment']
+            elements = ['Fracture Management', 'Intra artecular injections', 'PRP treatment (knee arthritis)', 'Spine care treatment', 'Paediatric ortho care']
             url = '/Ortho.svg'
         } else {
             elements = ['Acne (Pimple) Treatment', 'Acne Scar Treatment', 'Chemical Peel', 'Skin polishing', 'Derma roller', 'Skin rejuvenation', 'Hair Removal (Laser)', 'Tattoo removal', 'Scar (Laser)', 'Hair Growth (PRP)', 'Ear Lobe Repair', 'Day Care Surgeries', 'Nail Treatment']
@@ -60,13 +60,15 @@ const About_the_doctors = () => {
     const PrevbtnOnClick = () => {
         let elements = [];
         let url;
+        let doc_info = "";
 
         if (ortho === true) {
-            elements = ['Fracture Management', 'POP treatment']
+            elements = ['Fracture Management', 'POP treatment', 'Intra artecular injections', 'PRP treatment (knee arthritis)', 'Spine care treatment', 'Paediatric ortho care']
             url = '/Ortho.svg'
         } else {
             elements = ['Acne (Pimple) Treatment', 'Acne Scar Treatment', 'Chemical Peel', 'Skin polishing', 'Derma roller', 'Skin rejuvenation', 'Hair Removal (Laser)', 'Tattoo removal', 'Scar (Laser)', 'Hair Growth (PRP)', 'Ear Lobe Repair', 'Day Care Surgeries', 'Nail Treatment']
             url = '/skin_logo.svg'
+            doc_info = "Completed MS orthopaedics at prestigious Bangalore medical college and hospital. Completed post doctoral fellowship in spine surgery in Switzerland. Has rich experience in spine surgeries and trauma surgeries for a decade."
         }
         if (service === 0) {
             SetService((elements.length - 1))
@@ -118,9 +120,9 @@ const About_the_doctors = () => {
                     <div className={orthoclassnames} onClick={() => ToggleOnClick("ortho")}><div className="ortho-toggle-logo"><img src="/Ortho.svg" alt="not available" /></div></div>
                 </div>
                 <DocInfo active={ortho} />
-                {/*<p className="body-light-light" id="doctor-info-p">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, 
-                    sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Loremunt ut labore et dolore magna 
-                    aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet </p> */}
+                <p className="body-light-light" id="doctor-info-p">{ortho ?
+                 "Completed MS orthopaedics at prestigious Bangalore medical college and hospital. Completed post doctoral fellowship in spine surgery in Switzerland. Has rich experience in spine surgeries and trauma surgeries for a decade." : 
+                 "Completed MS dermatology at prestigious Bangalore medical college and hospital. Has Vast experience in dermatosurgical procedures, cosmetology procedures, lasers, vitiligo surgeries and hair transplantation for more than 15 years."}</p> 
                 <div className="services-carousel services-group">
                     <div onClick={() => PrevbtnOnClick()}><div className="service-controls"><img src="/prev_btn.svg" alt="next-service"></img></div></div>
                     <Services />

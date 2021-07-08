@@ -21,8 +21,12 @@ const Home_Services = () => {
         let url;
 
         if (active === true) {
-            elements = ['Fracture Management', 'POP Treatment']
-            info_elements = ["", ""]
+            elements = ['Fracture Management', 'Intra artecular injections', 'PRP treatment (knee arthritis)', 'Spine care treatment', 'Paediatric ortho care']
+            info_elements = ['Effective fracture management with POP slab and cost',
+            'Advanced intra artecular steroid and hyloronic acid injection to all joints on Out Patient basis.',
+            'Effective PRP treatment for joint arthritis (all joints)',
+            'Advanced spine care treatment for neck and low back pain',
+            'Effective Paediatric ortho treatment for fractures and deformatives']
             url = '/Ortho.svg'
         } else {
             elements = ['Acne (Pimple) Treatment', 'Acne Scar Treatment', 'Chemical Peel', 'Microdermabrasion', 'Skin polishing', 'Microneedling (Derma roller)', 'Skin rejuvenation', 'Hair Removal (Laser)', 'Tattoo removal', 'Scar (Laser)', 'Hair Growth (PRP)', 'Ear Lobe Repair', 'Day Care Surgeries', 'Nail Treatment']
